@@ -1,12 +1,12 @@
-API para leitura e manutenção de uma lista de cidades do Brasil em um arquivo CSV.
+API para leitura e manutenção de uma lista de cidades do Brasil importadas a partir de um arquivo CSV.
 
-1 - Importar o arquivo CSV das cidades para a base de dados;
+1 - Importar o arquivo CSV para a base de dados;
 http://localhost:8080/cities/csv-import
 
 2 - Exibir as cidades que são capitais ordenadas por nome;
 http://localhost:8080/cities/capitals-ordered-by-name
 
-3 - Exibir o nome do estado com a maior e menor quantidade de cidades e a quantidade de cidades;
+3 - Exibir o nome do estado com a maior e menor quantidade de cidades e a quantidade de cidades respectivamente;
 http://localhost:8080/cities/state-with-highest-and-lowest-number-of-cities
 
 4 - Exibir a quantidade de cidades por estado;
@@ -21,16 +21,16 @@ http://localhost:8080/cities/cities-by-state/{uf}
 7 - Adicionar uma nova Cidade;
 http://localhost:8080/cities/add-city
 {
-	"ibge_id":"1200089",
-	"uf":"MS",
-	"name":"Ladario",
+	"ibge_id":"9999999",
+	"uf":"SP",
+	"name":"Distrito de Canoas",
 	"capital":"false",
-	"lon":-19.00,
-	"lat":-57.00,
-	"no_accents":"Ladario",
-	"alternative_names":null,
-	"microregion":"Corumba",
-	"mesoregion":"Centro Oeste"
+	"lon":-46.97025896785842,
+	"lat":-21.425598796958003,
+	"no_accents":"Distrito de Canoas",
+	"alternative_names":"Canoas",
+	"micro_region":"Mococa",
+	"macro_region":"Sudeste"
 }
 
 8 - Deletar uma cidade;
